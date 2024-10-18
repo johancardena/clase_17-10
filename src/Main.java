@@ -1,30 +1,17 @@
-import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        // Instancia de PersonaPrivada
+        PersonaPrivada persona1 = new PersonaPrivada("Juan", 17, 1.75);
+        System.out.println("----------------------- PERSONA PUBLICA -----------------------------" );
+        persona1.mostrarDatos();
+        System.out.println("Es mayor de edad: " + persona1.esMayorDeEdad());
 
-public static void main(String[] args) {
-    Jugador jugador1 = new Jugador();
-    jugador1.mostrarInformacion();
-    jugador1.patear();
-    jugador1.correr();
-    jugador1.saltar();
-    System.out.println();
 
-    Scanner scanner = new Scanner(System.in);
-
-    System.out.print("Ingresa el avatar del jugador 2: ");
-    String avatar2 = scanner.nextLine();
-
-    System.out.print("Ingresa la edad del jugador 2: ");
-    int edad2 = scanner.nextInt();
-    scanner.nextLine();
-
-    System.out.print("Ingresa el país del jugador 2: ");
-    String pais2 = scanner.nextLine();
-
-    Jugador jugador2 = new Jugador(avatar2, edad2, pais2);
-    jugador2.mostrarInformacion();
-    jugador2.patear();
-    jugador2.correr();
-    jugador2.saltar();
-
-    scanner.close();
+        // Instancia de PersonaPublica
+        PersonaPublica persona2 = new PersonaPublica("Calle Falsa 123",  "0979971783" ,"juan@gmail.com");
+        System.out.println("----------------------- PERSONA PRIVADA -----------------------------" );
+        System.out.println("Dirección: " + persona2.direccion);
+        System.out.println("Email: " + persona2.email);
+        persona2.probarMetodosPrivados("Nueva Dirección 456");
+    }
 }
