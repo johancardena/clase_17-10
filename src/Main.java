@@ -25,6 +25,6 @@ public static void main(String[] args) {
     jugador2.patear();
     jugador2.correr();
     jugador2.saltar();
-//
+
     scanner.close();
 }
