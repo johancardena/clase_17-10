@@ -20,25 +20,13 @@ public class PersonaPrivada {
         return edad >= 18;
     }
 
-    // Getters y setters
-    public String getNombre() {
-        return nombre;
-    }
-
+    // setters
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public int getEdad() {
-        return edad;
-    }
-
     public void setEdad(int edad) {
         this.edad = edad;
-    }
-
-    public double getAltura() {
-        return altura;
     }
 
     public void setAltura(double altura) {

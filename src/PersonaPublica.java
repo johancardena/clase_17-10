@@ -9,16 +9,16 @@ public class PersonaPublica {
         this.email = email;
     }
 
-    private void cambiarDireccion(String nuevaDireccion) {
-        this.direccion = nuevaDireccion;
+    private void mostrarDireccion(String direccion) {
+        this.direccion = direccion;
     }
 
     private void mostrarTelefono() {
         System.out.println("Teléfono: " + telefono);
     }
 
-    public void probarMetodosPrivados(String nuevaDireccion) {
-        cambiarDireccion(nuevaDireccion);
+    public void probarMetodosPrivados(String direccion) {
+        mostrarDireccion(direccion);
         mostrarTelefono();
     }
 }
